@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/single_request"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/defaultt" />
+
+    <TextView
+        android:id="@+id/user_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/single_request"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/single_request"
+        android:layout_toRightOf="@+id/single_request"
+        android:text="Display Name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+    <Button
+        android:id="@+id/single_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@+id/user_request"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/single_request"
+        android:layout_toRightOf="@+id/single_request"
+        android:text="Accept"
+        android:background="@color/colorAccent"
+        android:textColor="#ffffff"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/single_decline"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignTop="@+id/single_accept"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_toEndOf="@+id/single_accept"
+        android:layout_toRightOf="@+id/single_accept"
+        android:text="Decline"
+        android:background="@color/Acc_Btn"
+        android:textColor="#ffffff"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/RequestText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/single_accept"
+        android:layout_alignBottom="@+id/single_accept"
+        android:layout_alignLeft="@+id/single_accept"
+        android:layout_alignStart="@+id/single_accept"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:textColor="@color/Acc_Btn"
+        android:textSize="22sp"
+        android:text="TextView" />
+
+
+</RelativeLayout>

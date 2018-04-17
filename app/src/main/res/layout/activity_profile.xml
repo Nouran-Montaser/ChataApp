@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.lenovo.chat.ProfileActivity"
+    android:background="#263238">
+
+
+    <ImageView
+        android:id="@+id/activity_profile_img"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:src="@drawable/defaultt" />
+
+    <TextView
+        android:id="@+id/activity_profile_name"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Display Name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/activity_profile_status"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Current User Status"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/activity_profile_friends"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:text="Total Friends"
+        android:textSize="14sp" />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/activity_profile_sendReq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Friend Request"
+        android:background="@color/colorAccent"
+        android:textColor="#ffffff"
+        android:padding="15dp"/>
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="13dp"
+        android:id="@+id/activity_profile_declineReq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decline Friend Request"
+        android:background="@color/colorAccent"
+        android:textColor="#ffffff"
+        android:padding="15dp"/>
+
+</LinearLayout>
